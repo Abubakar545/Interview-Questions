@@ -253,7 +253,63 @@ Example list:
 List<Integer> list = Arrays.asList(1,2,3,3,4,5,5);
 ```
 
+List<Integer> list = Arrays.asList(1, 3, 5, 7, 9, 13, 23);
+int target = 5;
 
+linear approach
+-------------------------
+List<Integer> list = new ArrayList<>(Arrays.asList(1,3,5,7,9,13,23));
+int target = 5;
+int index = -1;
+
+for (int i = 0; i < list.size(); i++) {
+    if (list.get(i) == target) {
+        index = i;
+        break;
+    } else if (list.get(i) > target) {
+        list.add(i, target);
+        index = i;
+        break;
+    }
+}
+
+if (index == -1) {
+    list.add(target);
+    index = list.size() - 1;
+}
+
+System.out.println("Index: " + index);
+System.out.println("List: " + list);
+
+
+optimal solution
+------------------------
+List<Integer> list = new ArrayList<>(Arrays.asList(1,3,5,7,9,13,23));
+int target = 5;
+
+int low = 0, high = list.size() - 1;
+int index = -1;
+
+while (low <= high) {
+    int mid = (low + high) / 2;
+
+    if (list.get(mid) == target) {
+        index = mid;
+        break;
+    } else if (list.get(mid) < target) {
+        low = mid + 1;
+    } else {
+        high = mid - 1;
+    }
+}
+
+if (index == -1) {
+    list.add(low, target); // correct sorted position
+    index = low;
+}
+
+System.out.println("Index: " + index);
+System.out.println("List: " + list);
 
 
 
