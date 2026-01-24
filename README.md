@@ -29,7 +29,9 @@ MySQL
 React.js
 ---------------------------
 1) what is prop drilling, how can we handle it by using framework and tools
-2) 
+2) redux and context api
+3) difference between fetch and axios
+4) 
 
 Mindtree Interview         --- 20th jan 2026
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
