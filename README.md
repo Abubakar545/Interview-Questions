@@ -117,6 +117,24 @@ PWC Interview              --- 20th jan 2026
 13) what is redux
 14) create a table, where i has object with id, name and age and display this details in that table using react UI
 
+----------------------------------------------------------------------------------------------------------------------------------------------
+Altimetric Interview questions
+----------------------------------------------------------------------------------------------------------------------------------------------
+1) What happens if we remove an element from a collection inside a for-each loop? Why does it cause ConcurrentModificationException?
+
+2) Why do the methods clone(), notify(), and notifyAll() belong to the Object class and not to user-defined classes?
+
+3) In a Singleton class, cloning can create multiple objects. How do you prevent cloning from breaking the Singleton pattern?
+
+4) Can a Singleton class be serialized? If yes, how do you prevent multiple instances during deserialization?
+
+5) In Spring Boot, can we replace @Controller and @Service annotations with @Component? If yes, why do we still prefer specialized annotations?
+
+6) How can we configure timeout settings for a REST API in Spring Boot? Write the code.
+
+7) Where do we use synchronous and asynchronous communication in microservices? Explain with a real-time example.
+
+8) Which authentication mechanisms are you familiar with? Explain briefly.
 
 List of All Important Questions
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
