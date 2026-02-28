@@ -1,5 +1,89 @@
-# Interview-Questions
+![WhatsApp Image 2026-02-21 at 4 35 03 PM](https://github.com/user-attachments/assets/e80e2ece-ca9c-4171-b0b7-e82fbcd1d7e9)# Interview-Questions
 List of interview questions for different companies 
+
+
+**Lufthanasasystems Interview ---- 28 feb 2026**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Java Coding
+Q1) using stream String = "My. name, is Abc" the output should be "yM. eman, si cbA";
+
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
+public class Main {
+    public static void main(String[] args) {
+        String input = "My. name. is Abc";
+
+        String output = Arrays.stream(input.split(" "))
+                .map(word -> new StringBuilder(word).reverse().toString())
+                .collect(Collectors.joining(" "));
+
+        System.out.println(output);
+    }
+}
+
+Q2) Deadlock and RaceCondition
+Q3) Relationship between == and equals()
+Q4) How Auto configuration works in spring
+Q5) How to make a class imutable in Java
+Q6) Types of injections? difference between Constructor and field injection
+Q8) HashMap and LinkedHashMap differnce
+Q9) 
+
+
+
+**Combined 3 compiences interview**
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+🔹 Java Core & Collections
+
+1) Declare a 2D array and iterate over it using an enhanced for loop (for-each) in Java.
+Given:
+int[] arr = {1,2,2,3,3,3,4,4,4,4,5,5};
+2) Remove duplicates without using any additional array and fill remaining slots with null.
+3) Difference between throw and throws.
+4) Write a program to reverse an integer number.
+5) Explain internal working of HashMap.
+6) What is a lambda expression?
+7) What is a functional interface? Can it have static and default methods?
+
+🔹 OOP Concepts
+1) Explain inheritance and polymorphism.
+2) Explain SOLID principles.
+3) What design patterns do you know in Java?
+4) Write a program to create a Singleton class.
+5) How can you optimize Singleton in a multithreaded environment? (using synchronized / double-checked locking)
+6) What is a synchronized block?
+
+🔹 Java 8 / Streams / Collections
+1) Given a list:
+["ram","sita","rahul", null, null, "deepak"]
+Convert it to output:
+[null, null, "ram","sita","rahul","deepak"] using Java 8.
+2) Print numbers from 1 to 100 using 3 threads (Executor Framework) and print thread names.
+🔹 Multithreading & Executor Framework
+3) What is the Executor Framework in Java?
+4) How do you create a fixed thread pool of size 3?
+5) How do you manage task execution using multiple threads?
+
+🔹 Spring Boot / Microservices
+1) How can we configure timeout for a REST API?
+2) How to convert a monolithic application into microservices?
+3) What is dependency injection and what are its types?
+4) What will @Autowired do internally?
+
+🔹 JPA / Hibernate
+1) What are criteria queries in JPA?
+2) Explain JPA Criteria API and its use cases.
+
+🔹 Scenario Based / SQL / Design
+1) From a given employee table, find the manager having the maximum number of subordinates.
+2) Why do we store LDAP user personal data in DB tables after syncing? Is it really needed?
+
+🔹 Additional Conceptual Questions
+1) Can we apply abstract to non-volatile variables?
+2) Explain Java 17 features you implemented in your project.
+3) Explain LRU Cache implementation using LinkedList (or other DS).
+
 
 
 **CitiusTech**          --- 24 Jan 2026
