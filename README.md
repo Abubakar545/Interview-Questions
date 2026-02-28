@@ -1,4 +1,4 @@
-![WhatsApp Image 2026-02-21 at 4 35 03 PM](https://github.com/user-attachments/assets/e80e2ece-ca9c-4171-b0b7-e82fbcd1d7e9)# Interview-Questions
+# Interview-Questions
 List of interview questions for different companies 
 
 
@@ -28,7 +28,8 @@ Q4) How Auto configuration works in spring
 Q5) How to make a class imutable in Java
 Q6) Types of injections? difference between Constructor and field injection
 Q8) HashMap and LinkedHashMap differnce
-Q9) 
+Q9) What is the role of consumer in kafka
+Q10) 
 
 
 
