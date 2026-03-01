@@ -55,6 +55,7 @@ Q8) HashMap and LinkedHashMap differnce
 Q9) What is the role of consumer in kafka
 Q10) How to intialize actuator in springboot
 Q11) Logback in springboot
+Q12) How to specificy and update version in restapi's
 
 
 
