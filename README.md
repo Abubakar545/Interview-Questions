@@ -53,7 +53,7 @@ public class AvgSalaryByDept {
         );
     }
 }
-Q2) Anagram code  --- Normal
+2) Anagram code  --- Normal
 public class AnagramCharArray {
     public static void main(String[] args) {
 
@@ -103,10 +103,10 @@ public class AnagramCharArray {
         return true;
     }
 }
-Q3) Internal working of List
-Q4) Internal working of Set
-Q5) Primary and Qualifer Annotation
-Q6) what is abstraction
+3) Internal working of List
+4) Internal working of Set
+5) Primary and Qualifer Annotation
+6) what is abstraction
 Q7) Can we create concreate method in Interface
 Q8) When to use Abstract class and Interface
 Q9) Write a singleton design pattren with normal and with thread safe
