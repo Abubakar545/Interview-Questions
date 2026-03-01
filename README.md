@@ -2,6 +2,128 @@
 List of interview questions for different companies 
 
 
+**bounteous x accolite Interview  ---- 01 March 2026**
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Java Coding
+Q1) Get Avg salary of employees based on there department  --- using java 8
+class Employee {
+    private int id;
+    private String name;
+    private String department;
+    private double salary;
+
+    public Employee(int id, String name, String department, double salary) {
+        this.id = id;
+        this.name = name;
+        this.department = department;
+        this.salary = salary;
+    }
+
+    public String getDepartment() {
+        return department;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+import java.util.*;
+import java.util.stream.Collectors;
+
+public class AvgSalaryByDept {
+    public static void main(String[] args) {
+
+        List<Employee> list = Arrays.asList(
+            new Employee(1, "Abu", "IT", 50000),
+            new Employee(2, "Siddiq", "IT", 60000),
+            new Employee(3, "Rahul", "HR", 40000),
+            new Employee(4, "Ram", "HR", 45000),
+            new Employee(5, "Deepak", "Sales", 55000)
+        );
+
+        Map<String, Double> avgSalary =
+            list.stream()
+                .collect(Collectors.groupingBy(
+                    Employee::getDepartment,
+                    Collectors.averagingDouble(Employee::getSalary)
+                ));
+
+        avgSalary.forEach((dept, avg) ->
+            System.out.println(dept + " -> " + avg)
+        );
+    }
+}
+Q2) Anagram code  --- Normal
+public class AnagramCharArray {
+    public static void main(String[] args) {
+
+        String s1 = "listen";
+        String s2 = "silent";
+
+        boolean result = isAnagram(s1, s2);
+
+        if (result) {
+            System.out.println("Anagram");
+        } else {
+            System.out.println("Not Anagram");
+        }
+    }
+
+    public static boolean isAnagram(String s1, String s2) {
+
+        // Step 1: Length check
+        if (s1.length() != s2.length()) {
+            return false;
+        }
+
+        // Step 2: Convert to char arrays
+        char[] arr1 = s1.toCharArray();
+        char[] arr2 = s2.toCharArray();
+
+        // Step 3: Create frequency array (assuming lowercase a-z)
+        int[] freq = new int[26];
+
+        // Step 4: Increase count for first string
+        for (char c : arr1) {
+            freq[c - 'a']++;
+        }
+
+        // Step 5: Decrease count for second string
+        for (char c : arr2) {
+            freq[c - 'a']--;
+        }
+
+        // Step 6: Check all values are zero
+        for (int count : freq) {
+            if (count != 0) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
+Q3) Internal working of List
+Q4) Internal working of Set
+Q5) Primary and Qualifer Annotation
+Q6) what is abstraction
+Q7) Can we create concreate method in Interface
+Q8) When to use Abstract class and Interface
+Q9) Write a singleton design pattren with normal and with thread safe
+Q10) How did you handle exception in your project
+Q11) How to Create Global Exception
+Q12) What type of functional Interface have to used in your project
+Q13) How to create Custom Exception
+Q14) Java 8 features, which are the features you have used in your current project
+Q15) Optional classes, where you used this in you current project and what are the method present in the optional class
+Q16) What is stream API
+Q17) How to create custom functional interface
+
+MYSQL
+-------
+Q1) what is index
+Q2) How to create index on table
+
 **Lufthanasasystems Interview ---- 28 feb 2026**
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Java Coding
