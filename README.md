@@ -10,15 +10,39 @@ Q1) using stream String = "My. name, is Abc" the output should be "yM. eman, si 
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class Main {
+public class ReverseEachWord {
     public static void main(String[] args) {
-        String input = "My. name. is Abc";
 
-        String output = Arrays.stream(input.split(" "))
-                .map(word -> new StringBuilder(word).reverse().toString())
+        String s = "My, Name. Is Abc";
+
+        String output = Arrays.stream(s.split(" "))
+                .map(ReverseEachWord::reverseWordKeepPunctuation)
                 .collect(Collectors.joining(" "));
 
         System.out.println(output);
+    }
+
+    private static String reverseWordKeepPunctuation(String word) {
+        char[] arr = word.toCharArray();
+
+        int left = 0;
+        int right = arr.length - 1;
+
+        while (left < right) {
+
+            if (!Character.isLetter(arr[left])) {
+                left++;
+            } else if (!Character.isLetter(arr[right])) {
+                right--;
+            } else {
+                char temp = arr[left];
+                arr[left] = arr[right];
+                arr[right] = temp;
+                left++;
+                right--;
+            }
+        }
+        return new String(arr);
     }
 }
 
