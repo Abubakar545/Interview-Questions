@@ -53,7 +53,8 @@ Q5) How to make a class imutable in Java
 Q6) Types of injections? difference between Constructor and field injection
 Q8) HashMap and LinkedHashMap differnce
 Q9) What is the role of consumer in kafka
-Q10) 
+Q10) How to intialize actuator in springboot
+Q11) Logback in springboot
 
 
 
